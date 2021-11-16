@@ -118,7 +118,9 @@
             {
                 $address= htmlspecialchars($_POST["address"]);
             }
-
+            if($hasError == false){
+                //database info
+            }
         }    
         ?>
     </head>
