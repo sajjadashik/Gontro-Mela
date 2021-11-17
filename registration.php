@@ -12,6 +12,8 @@
         $err_pass="";
         $cpassword="";
         $err_cpass="";
+        $gender="";
+        $err_gender="";
         $email="";
         $err_email="";
         $phonenumber="";
@@ -42,20 +44,42 @@
             if (empty($_POST["password"])) 
             {
                 $err_pass = "*Password is Required";
-                $haserror=true;
             } 
+            else if (strlen($_POST["password"]) < 8) 
+            {
+                $err_pass = "*Password should be at least 8 characters";
+                $haserror=true;
+            }
             else 
             {
-                $password = htmlspecialchars($_POST["password"]);
+                $password = $_POST["password"];
             }
             if (empty($_POST["cpassword"])) 
             {
                 $err_cpass = "*Confirm Password is Required";
                 $haserror=true;
             } 
-            else 
+            else
             {
-                $cpassword = htmlspecialchars($_POST["cpassword"]);
+                if ($_POST["password"] == $_POST["cpassword"]) 
+                {
+                    $cpassword = $_POST["cpassword"];
+                } 
+                else 
+                {
+                    $err_cpass = "*Password & Confirm Password Is Not Same";
+                    $haserror=true;
+                }
+            }
+           
+            if (!isset($_POST["gender"])) 
+            {
+                $err_gender = "*Gender is Required";
+                $haserror=true;
+            }
+            else
+            {
+                $gender = $_POST["gender"];
             }
             if (empty($_POST["email"])) 
             {
@@ -76,14 +100,28 @@
                 $err_number="Invalid Phone Number";
 		        $haserror=true;
             }
+           else if (strlen($_POST["phonenumber"]) == 10) 
+            {
+                $err_number = "*Phone Number should be 11 characters";
+                $haserror=true;
+            }
             else 
             {
                 $phonenumber= htmlspecialchars($_POST["phonenumber"]);
             }
-
-        }
-
-        
+            if (empty($_POST["address"])) 
+            {
+                $err_address = "*Address is Required";
+                $haserror=true;
+            } 
+            else 
+            {
+                $address= htmlspecialchars($_POST["address"]);
+            }
+            if($hasError == false){
+                //database info
+            }
+        }    
         ?>
     </head>
 
@@ -113,7 +151,7 @@
                         </tr>
                         <tr>
                             <td><span>Gender:</span></td>
-                            <td><input type="radio"  name="gender">Male<input type="radio"  name="gender">Female </td>
+                            <td><input type="radio"  name="gender">Male<input type="radio"  name="gender">Female <br> <span style="color: red;"><?php echo $err_gender; ?></span> </td>
                         </tr>
                         <tr>
                             <td><span>Email:</span></td>
