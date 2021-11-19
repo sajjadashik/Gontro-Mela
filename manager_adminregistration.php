@@ -128,7 +128,7 @@
     <body>
         <fieldset>
             <legend align="center"><h1>Admin Registration</h1></legend>
-                <form action="" method="post">
+                <form action="manager_adminregistration_code.php" method="post">
                     <table align="center">
                         <tr>
                             <td><span>Name:</span> </td>
@@ -151,7 +151,7 @@
                         </tr>
                         <tr>
                             <td><span>Gender:</span></td>
-                            <td><input type="radio"  name="gender">Male<input type="radio"  name="gender">Female <br> <span style="color: red;"><?php echo $err_gender; ?></span> </td>
+                            <td><input type="radio" value="Male" name="gender">Male<input type="radio" value="Female" name="gender">Female <br> <span style="color: red;"><?php echo $err_gender; ?></span> </td>
                         </tr>
                         <tr>
                             <td><span>Email:</span></td>
