@@ -48,7 +48,7 @@
 
         <fieldset>
             <legend align="center"><h1>Login</h1></legend>
-                <form action="" method="post">
+                <form action="login_code.php" method="post">
                     <table align="center">
                         <tr>
                             <td><span>Username:</span> </td>
