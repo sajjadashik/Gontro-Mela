@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
   
     <link rel="stylesheet" href="/css/style.css" >
     <!-- title icon -->
@@ -28,10 +29,8 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-try">
       <div class="container-fluid">
-        <a class="navbar-logo " href="#">
-          <img src="/image/images.jpg" alt="">
-      </a>
-      <a class="navbar-name m-2" href="#"><b>GronthoMela</b></a>
+        
+      <a class="navbar-name m-1" href="#"><b>GronthoMela</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,10 +53,64 @@
     </nav>
 <br> <br> <br>
 
-
+<!-- text sliding -->
 <div class="slide-left m-auto text-center md-9 text-white p-2 ">
   <h2>Welcome to GronthoMela! Enjoy your reading time.</h2>
 </div>
+<br>
+<!-- carousel -->
+<div id="carouselExampleCaptions" class=" container carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="cHeading text-center ">
+    <h5>Most Reading Boooks here</h5>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a class=" " href="#">
+      <img src="image/java.jpg" class="d-block w-90 cimg" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+       
+        <div class="corousel-btn">
+         
+          <button class="btn btn-outline-success m-1">Read</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a class="" href="#">
+      <img src="image/c++.jpg" class="d-block w-80 cimg" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+       
+        <div class="corousel-btn">
+          <button class="btn btn-outline-success m-1">Read</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a class=" " href="#">
+      <img src="image/java.jpg" class="d-block w-80 cimg" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+       
+        <div class="corousel-btn">
+          <button class="btn btn-outline-success m-1">Read</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br> <br> <br>
     <!-- card -->
     <div class="container card-container p-3">
       <div class="row sm-9">
