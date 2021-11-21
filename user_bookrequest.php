@@ -7,7 +7,7 @@
     <body>
         <fieldset>
             <legend align="center"><h1>Book Request Form</h1></legend>
-                <form action="" method="post">
+                <form action="user_bookrequest_code.php" method="post">
                     <table align="center">
                         <tr>
                             <td><span>Book Name:</span> </td>
