@@ -1,6 +1,6 @@
 body{
-    font-family: 'Lato', sans-serif;
-    background-color: cadetblue;
+  font-family: 'Open Sans', sans-serif;
+    background-color: rgb(110, 117, 117);
     
 }
 .navbar-try{
@@ -9,6 +9,7 @@ body{
     
 }
 .navbar-name{
+  font-family: 'Caveat', cursive;
     
     text-decoration: none;
     font-size: 25px;
@@ -22,11 +23,12 @@ body{
 }
 .btn{
     color: white;
-    background-color:cadetblue;
+    background-color:rgb(77, 122, 122);
 }
 
 
 .navbar-logo{
+ 
     width: 86px;
     height: 46px;
     border-radius: 5%;
@@ -67,9 +69,6 @@ body{
     text-align:center;
 
 }
-.card{
-     
-}
 
   .slide-left {
     width: 100%;
@@ -93,3 +92,26 @@ body{
       margin-right: 0%;
     }
   }
+
+  .carousel-item{
+height: 75vh;
+min-height: 100px;
+background: no-repeat scroll center scroll;
+-webkit-background-size: cover;
+background-size: cover;
+
+  }
+  .cimg{
+    
+    height: 65vh;
+    margin: auto;
+    
+  }
+  
+  .cHeading{
+    color:rgb(18, 21, 73);
+    background-color: 
+    
+  }
+
+   
