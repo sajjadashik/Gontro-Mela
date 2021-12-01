@@ -24,6 +24,12 @@
     <title>GronthoMela</title>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function anotherpage()
+        {
+            document.location.href="login.php";
+        }
+    </script>
 </head>
 
 <body>
@@ -45,9 +51,9 @@
           </ul>
           <form class="d-flex">
 
-           <a href="registration.php"> <button class="btn btn-outline-success m-1">Registration</button> </a>
-            <a href="login.php"><button class="btn btn-outline-success m-1">
-              <img src="https://img.icons8.com/ios-glyphs/20/000000/user--v1.png"/><em> </em>Login </button></a>
+            <button class="btn btn-outline-success m-1">Registration</button> 
+            <button onclick="anotherpage()" class="btn btn-outline-success m-1">
+              <img src="https://img.icons8.com/ios-glyphs/20/000000/user--v1.png"/><em> </em>Login </button>
            
              
           </form>
