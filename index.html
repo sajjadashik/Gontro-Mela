@@ -14,7 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+    <style>
+      .no-outline{
+        text-decoration:none;
+      }
+    </style>
   
 
     <link rel="stylesheet" href="style.css" >
@@ -24,12 +28,6 @@
     <title>GronthoMela</title>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script>
-        function anotherpage()
-        {
-            document.location.href="login.php";
-        }
-    </script>
 </head>
 
 <body>
@@ -51,10 +49,10 @@
           </ul>
           <form class="d-flex">
 
-            <button class="btn btn-outline-success m-1">Registration</button> 
-            <button onclick="anotherpage()" class="btn btn-outline-success m-1">
-              <img src="https://img.icons8.com/ios-glyphs/20/000000/user--v1.png"/><em> </em>Login </button>
-           
+            <a class="btn btn-outline-success m-1 jj" href="registration.php">Registration</a>
+             <a class="btn btn-outline-success m-1 jj" href="login.php">
+              <img src="https://img.icons8.com/ios-glyphs/20/000000/user--v1.png"/><em> </em>Login </a>
+          
              
           </form>
         </div>
